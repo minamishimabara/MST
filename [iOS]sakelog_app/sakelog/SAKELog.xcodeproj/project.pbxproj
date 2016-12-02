@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100CB8631DE16EAC009BCBC4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CB8621DE16EAC009BCBC4 /* SettingsViewController.swift */; };
+		100CB8651DE1752D009BCBC4 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CB8641DE1752D009BCBC4 /* TopViewController.swift */; };
+		100CB8681DE191ED009BCBC4 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CB8671DE191ED009BCBC4 /* UserDefaultsHelper.swift */; };
+		1015E8F01DD77238002B157A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1015E8EF1DD77238002B157A /* MapKit.framework */; };
+		101CA7BA1DE15FD70042D157 /* PanelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101CA7B91DE15FD70042D157 /* PanelButton.swift */; };
+		109479D71DD6DCFF00B539F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109479D61DD6DCFF00B539F9 /* AppDelegate.swift */; };
+		109479DC1DD6DCFF00B539F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109479DA1DD6DCFF00B539F9 /* Main.storyboard */; };
+		109479DE1DD6DCFF00B539F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109479DD1DD6DCFF00B539F9 /* Assets.xcassets */; };
+		109479E11DD6DCFF00B539F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109479DF1DD6DCFF00B539F9 /* LaunchScreen.storyboard */; };
+		109479E91DD6F48B00B539F9 /* SakeLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109479E81DD6F48B00B539F9 /* SakeLogViewController.swift */; };
+		109479EC1DD6F4F300B539F9 /* LabelCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109479EB1DD6F4F300B539F9 /* LabelCaptureViewController.swift */; };
+		109479EE1DD6F53000B539F9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109479ED1DD6F53000B539F9 /* MapViewController.swift */; };
+		109479F01DD6F55800B539F9 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109479EF1DD6F55800B539F9 /* InfoViewController.swift */; };
+		10B9123C1DE14A4600CBF442 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B9123B1DE14A4600CBF442 /* SafariServices.framework */; };
+		10B994AA1DE57F63003F963D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B994A91DE57F63003F963D /* CoreLocation.framework */; };
+		10B994AE1DE5DEAB003F963D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B994AB1DE5DEAB003F963D /* NotificationCenter.framework */; };
+		10B994AF1DE5DEAB003F963D /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B994AC1DE5DEAB003F963D /* UserNotifications.framework */; };
+		10B994B01DE5DEAB003F963D /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B994AD1DE5DEAB003F963D /* UserNotificationsUI.framework */; };
+		160FE0971DEA20A600FA373F /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160FE0961DEA20A600FA373F /* SVProgressHUD.framework */; };
+		160FE0991DEA214100FA373F /* ProgressUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE0981DEA214100FA373F /* ProgressUtil.swift */; };
+		1637EB291DE7ACDD008F34D4 /* BeaconUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB281DE7ACDD008F34D4 /* BeaconUtil.swift */; };
+		1637EB2B1DE7AD25008F34D4 /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB2A1DE7AD25008F34D4 /* AlertUtil.swift */; };
+		1637EB2D1DE7AE8D008F34D4 /* NotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB2C1DE7AE8D008F34D4 /* NotificationUtil.swift */; };
+		1637EB301DE7B5B2008F34D4 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1637EB2F1DE7B5B2008F34D4 /* SettingViewController.storyboard */; };
+		1637EB331DE7C508008F34D4 /* StampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB321DE7C508008F34D4 /* StampViewController.swift */; };
+		1637EB351DE86F7F008F34D4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1637EB341DE86F7F008F34D4 /* AVFoundation.framework */; };
+		1637EB3A1DE88FF6008F34D4 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1637EB381DE88FF6008F34D4 /* AFNetworking.framework */; };
+		1637EB3B1DE88FF6008F34D4 /* KIFastQR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1637EB391DE88FF6008F34D4 /* KIFastQR.framework */; };
+		1637EB3D1DE89DBC008F34D4 /* RequestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB3C1DE89DBC008F34D4 /* RequestUtil.swift */; };
+		1637EB4B1DE91629008F34D4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB411DE91629008F34D4 /* FMDatabase.m */; };
+		1637EB4C1DE91629008F34D4 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB431DE91629008F34D4 /* FMDatabaseAdditions.m */; };
+		1637EB4D1DE91629008F34D4 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB451DE91629008F34D4 /* FMDatabasePool.m */; };
+		1637EB4E1DE91629008F34D4 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB471DE91629008F34D4 /* FMDatabaseQueue.m */; };
+		1637EB4F1DE91629008F34D4 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB4A1DE91629008F34D4 /* FMResultSet.m */; };
+		1637EB511DE91A2B008F34D4 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1637EB501DE91A2B008F34D4 /* libsqlite3.0.tbd */; };
+		1637EB531DE91AB3008F34D4 /* DatabaseUtli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB521DE91AB3008F34D4 /* DatabaseUtli.swift */; };
+		1637EB561DE91BFA008F34D4 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB551DE91BFA008F34D4 /* StringExtension.swift */; };
+		1637EB591DE92A2D008F34D4 /* SakeLogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB581DE92A2D008F34D4 /* SakeLogData.swift */; };
+		1637EB5C1DE95B25008F34D4 /* SakeLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB5A1DE95B25008F34D4 /* SakeLogTableViewCell.swift */; };
+		1637EB5D1DE95B25008F34D4 /* SakeLogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1637EB5B1DE95B25008F34D4 /* SakeLogTableViewCell.xib */; };
+		1637EB5F1DE97A1B008F34D4 /* S_SimabaraInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB5E1DE97A1B008F34D4 /* S_SimabaraInfoViewController.swift */; };
+		1637EB611DE982BB008F34D4 /* JsonParseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB601DE982BB008F34D4 /* JsonParseUtil.swift */; };
+		1637EB631DE98417008F34D4 /* SakeLogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637EB621DE98417008F34D4 /* SakeLogDetailViewController.swift */; };
+		68C73938A0C19B0CA00479E1 /* Pods_SAKELog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EB4B19EA82826ECA0CE3D8 /* Pods_SAKELog.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100CB8621DE16EAC009BCBC4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ViewController/SettingsViewController.swift; sourceTree = "<group>"; };
+		100CB8641DE1752D009BCBC4 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopViewController.swift; path = ViewController/TopViewController.swift; sourceTree = "<group>"; };
+		100CB8671DE191ED009BCBC4 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsHelper.swift; path = Util/UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		1015E8EF1DD77238002B157A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		101CA7B91DE15FD70042D157 /* PanelButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PanelButton.swift; path = ViewController/UIParts/PanelButton.swift; sourceTree = "<group>"; };
+		109479D31DD6DCFF00B539F9 /* SAKELog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAKELog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		109479D61DD6DCFF00B539F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		109479DB1DD6DCFF00B539F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		109479DD1DD6DCFF00B539F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		109479E01DD6DCFF00B539F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		109479E21DD6DCFF00B539F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		109479E81DD6F48B00B539F9 /* SakeLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SakeLogViewController.swift; path = ViewController/SakeLogViewController.swift; sourceTree = "<group>"; };
+		109479EB1DD6F4F300B539F9 /* LabelCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelCaptureViewController.swift; path = ViewController/LabelCaptureViewController.swift; sourceTree = "<group>"; };
+		109479ED1DD6F53000B539F9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ViewController/MapViewController.swift; sourceTree = "<group>"; };
+		109479EF1DD6F55800B539F9 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = ViewController/InfoViewController.swift; sourceTree = "<group>"; };
+		10B9123B1DE14A4600CBF442 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		10B994A91DE57F63003F963D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		10B994AB1DE5DEAB003F963D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		10B994AC1DE5DEAB003F963D /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		10B994AD1DE5DEAB003F963D /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		160FE0961DEA20A600FA373F /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = "Pods/../build/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework"; sourceTree = "<group>"; };
+		160FE0981DEA214100FA373F /* ProgressUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressUtil.swift; path = Util/ProgressUtil.swift; sourceTree = "<group>"; };
+		1637EB281DE7ACDD008F34D4 /* BeaconUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeaconUtil.swift; path = Util/BeaconUtil.swift; sourceTree = "<group>"; };
+		1637EB2A1DE7AD25008F34D4 /* AlertUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertUtil.swift; path = Util/AlertUtil.swift; sourceTree = "<group>"; };
+		1637EB2C1DE7AE8D008F34D4 /* NotificationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationUtil.swift; path = Util/NotificationUtil.swift; sourceTree = "<group>"; };
+		1637EB2F1DE7B5B2008F34D4 /* SettingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SettingViewController.storyboard; path = StoryBoard/SettingViewController.storyboard; sourceTree = "<group>"; };
+		1637EB321DE7C508008F34D4 /* StampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StampViewController.swift; path = ViewController/StampViewController.swift; sourceTree = "<group>"; };
+		1637EB341DE86F7F008F34D4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1637EB381DE88FF6008F34D4 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		1637EB391DE88FF6008F34D4 /* KIFastQR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIFastQR.framework; path = "Pods/../build/Debug-iphoneos/KIFastQR/KIFastQR.framework"; sourceTree = "<group>"; };
+		1637EB3C1DE89DBC008F34D4 /* RequestUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestUtil.swift; path = Util/RequestUtil.swift; sourceTree = "<group>"; };
+		1637EB3F1DE91628008F34D4 /* SAKELog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SAKELog-Bridging-Header.h"; sourceTree = "<group>"; };
+		1637EB401DE91629008F34D4 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		1637EB411DE91629008F34D4 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		1637EB421DE91629008F34D4 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		1637EB431DE91629008F34D4 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		1637EB441DE91629008F34D4 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		1637EB451DE91629008F34D4 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		1637EB461DE91629008F34D4 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		1637EB471DE91629008F34D4 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		1637EB481DE91629008F34D4 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = fmdb/FMDB.h; sourceTree = "<group>"; };
+		1637EB491DE91629008F34D4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		1637EB4A1DE91629008F34D4 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		1637EB501DE91A2B008F34D4 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		1637EB521DE91AB3008F34D4 /* DatabaseUtli.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseUtli.swift; path = Util/DatabaseUtli.swift; sourceTree = "<group>"; };
+		1637EB551DE91BFA008F34D4 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Const/StringExtension.swift; sourceTree = "<group>"; };
+		1637EB581DE92A2D008F34D4 /* SakeLogData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SakeLogData.swift; path = Object/SakeLogData.swift; sourceTree = "<group>"; };
+		1637EB5A1DE95B25008F34D4 /* SakeLogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SakeLogTableViewCell.swift; path = ViewController/UIParts/SakeLogTableViewCell.swift; sourceTree = "<group>"; };
+		1637EB5B1DE95B25008F34D4 /* SakeLogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SakeLogTableViewCell.xib; path = ViewController/UIParts/SakeLogTableViewCell.xib; sourceTree = "<group>"; };
+		1637EB5E1DE97A1B008F34D4 /* S_SimabaraInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = S_SimabaraInfoViewController.swift; path = ViewController/S_SimabaraInfoViewController.swift; sourceTree = "<group>"; };
+		1637EB601DE982BB008F34D4 /* JsonParseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonParseUtil.swift; path = Util/JsonParseUtil.swift; sourceTree = "<group>"; };
+		1637EB621DE98417008F34D4 /* SakeLogDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SakeLogDetailViewController.swift; path = ViewController/SakeLogDetailViewController.swift; sourceTree = "<group>"; };
+		338D7B19D859E15317CEA4CD /* Pods-SAKELog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAKELog.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAKELog/Pods-SAKELog.release.xcconfig"; sourceTree = "<group>"; };
+		ABC647DC65F5B77D172B6213 /* Pods-SAKELog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAKELog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAKELog/Pods-SAKELog.debug.xcconfig"; sourceTree = "<group>"; };
+		E9EB4B19EA82826ECA0CE3D8 /* Pods_SAKELog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAKELog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		109479D01DD6DCFE00B539F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160FE0971DEA20A600FA373F /* SVProgressHUD.framework in Frameworks */,
+				1637EB511DE91A2B008F34D4 /* libsqlite3.0.tbd in Frameworks */,
+				1637EB3A1DE88FF6008F34D4 /* AFNetworking.framework in Frameworks */,
+				1637EB3B1DE88FF6008F34D4 /* KIFastQR.framework in Frameworks */,
+				1637EB351DE86F7F008F34D4 /* AVFoundation.framework in Frameworks */,
+				10B994AE1DE5DEAB003F963D /* NotificationCenter.framework in Frameworks */,
+				10B994AF1DE5DEAB003F963D /* UserNotifications.framework in Frameworks */,
+				10B994B01DE5DEAB003F963D /* UserNotificationsUI.framework in Frameworks */,
+				10B994AA1DE57F63003F963D /* CoreLocation.framework in Frameworks */,
+				10B9123C1DE14A4600CBF442 /* SafariServices.framework in Frameworks */,
+				1015E8F01DD77238002B157A /* MapKit.framework in Frameworks */,
+				68C73938A0C19B0CA00479E1 /* Pods_SAKELog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100CB8661DE191CB009BCBC4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				100CB8671DE191ED009BCBC4 /* UserDefaultsHelper.swift */,
+				1637EB281DE7ACDD008F34D4 /* BeaconUtil.swift */,
+				1637EB2A1DE7AD25008F34D4 /* AlertUtil.swift */,
+				1637EB2C1DE7AE8D008F34D4 /* NotificationUtil.swift */,
+				1637EB3C1DE89DBC008F34D4 /* RequestUtil.swift */,
+				1637EB521DE91AB3008F34D4 /* DatabaseUtli.swift */,
+				1637EB601DE982BB008F34D4 /* JsonParseUtil.swift */,
+				160FE0981DEA214100FA373F /* ProgressUtil.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		1015E8EE1DD77237002B157A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				160FE0961DEA20A600FA373F /* SVProgressHUD.framework */,
+				1637EB501DE91A2B008F34D4 /* libsqlite3.0.tbd */,
+				1637EB381DE88FF6008F34D4 /* AFNetworking.framework */,
+				1637EB391DE88FF6008F34D4 /* KIFastQR.framework */,
+				1637EB341DE86F7F008F34D4 /* AVFoundation.framework */,
+				10B994AB1DE5DEAB003F963D /* NotificationCenter.framework */,
+				10B994AC1DE5DEAB003F963D /* UserNotifications.framework */,
+				10B994AD1DE5DEAB003F963D /* UserNotificationsUI.framework */,
+				10B994A91DE57F63003F963D /* CoreLocation.framework */,
+				10B9123B1DE14A4600CBF442 /* SafariServices.framework */,
+				1015E8EF1DD77238002B157A /* MapKit.framework */,
+				E9EB4B19EA82826ECA0CE3D8 /* Pods_SAKELog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		109479CA1DD6DCFE00B539F9 = {
+			isa = PBXGroup;
+			children = (
+				109479D51DD6DCFF00B539F9 /* SAKELog */,
+				109479D41DD6DCFF00B539F9 /* Products */,
+				1015E8EE1DD77237002B157A /* Frameworks */,
+				71664D20E5BD5D256343D0C1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		109479D41DD6DCFF00B539F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				109479D31DD6DCFF00B539F9 /* SAKELog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		109479D51DD6DCFF00B539F9 /* SAKELog */ = {
+			isa = PBXGroup;
+			children = (
+				1637EB571DE92A16008F34D4 /* Object */,
+				1637EB541DE91BE0008F34D4 /* Const */,
+				1637EB3E1DE91611008F34D4 /* FMDB */,
+				100CB8661DE191CB009BCBC4 /* Util */,
+				109479F11DD6F61100B539F9 /* AppSetting */,
+				109479EA1DD6F49300B539F9 /* ViewController */,
+			);
+			path = SAKELog;
+			sourceTree = "<group>";
+		};
+		109479EA1DD6F49300B539F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1637EB311DE7C2CB008F34D4 /* UIParts */,
+				109479E81DD6F48B00B539F9 /* SakeLogViewController.swift */,
+				109479EB1DD6F4F300B539F9 /* LabelCaptureViewController.swift */,
+				109479ED1DD6F53000B539F9 /* MapViewController.swift */,
+				109479EF1DD6F55800B539F9 /* InfoViewController.swift */,
+				100CB8621DE16EAC009BCBC4 /* SettingsViewController.swift */,
+				100CB8641DE1752D009BCBC4 /* TopViewController.swift */,
+				1637EB321DE7C508008F34D4 /* StampViewController.swift */,
+				1637EB5E1DE97A1B008F34D4 /* S_SimabaraInfoViewController.swift */,
+				1637EB621DE98417008F34D4 /* SakeLogDetailViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		109479F11DD6F61100B539F9 /* AppSetting */ = {
+			isa = PBXGroup;
+			children = (
+				1637EB3F1DE91628008F34D4 /* SAKELog-Bridging-Header.h */,
+				1637EB2E1DE7B576008F34D4 /* StoryBoard */,
+				109479D61DD6DCFF00B539F9 /* AppDelegate.swift */,
+				109479DD1DD6DCFF00B539F9 /* Assets.xcassets */,
+				109479E21DD6DCFF00B539F9 /* Info.plist */,
+			);
+			name = AppSetting;
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		1637EB2E1DE7B576008F34D4 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				109479DF1DD6DCFF00B539F9 /* LaunchScreen.storyboard */,
+				109479DA1DD6DCFF00B539F9 /* Main.storyboard */,
+				1637EB2F1DE7B5B2008F34D4 /* SettingViewController.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		1637EB311DE7C2CB008F34D4 /* UIParts */ = {
+			isa = PBXGroup;
+			children = (
+				101CA7B91DE15FD70042D157 /* PanelButton.swift */,
+				1637EB5A1DE95B25008F34D4 /* SakeLogTableViewCell.swift */,
+				1637EB5B1DE95B25008F34D4 /* SakeLogTableViewCell.xib */,
+			);
+			name = UIParts;
+			sourceTree = "<group>";
+		};
+		1637EB3E1DE91611008F34D4 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				1637EB401DE91629008F34D4 /* FMDatabase.h */,
+				1637EB411DE91629008F34D4 /* FMDatabase.m */,
+				1637EB421DE91629008F34D4 /* FMDatabaseAdditions.h */,
+				1637EB431DE91629008F34D4 /* FMDatabaseAdditions.m */,
+				1637EB441DE91629008F34D4 /* FMDatabasePool.h */,
+				1637EB451DE91629008F34D4 /* FMDatabasePool.m */,
+				1637EB461DE91629008F34D4 /* FMDatabaseQueue.h */,
+				1637EB471DE91629008F34D4 /* FMDatabaseQueue.m */,
+				1637EB481DE91629008F34D4 /* FMDB.h */,
+				1637EB491DE91629008F34D4 /* FMResultSet.h */,
+				1637EB4A1DE91629008F34D4 /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		1637EB541DE91BE0008F34D4 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				1637EB551DE91BFA008F34D4 /* StringExtension.swift */,
+			);
+			name = Const;
+			sourceTree = "<group>";
+		};
+		1637EB571DE92A16008F34D4 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				1637EB581DE92A2D008F34D4 /* SakeLogData.swift */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+		71664D20E5BD5D256343D0C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABC647DC65F5B77D172B6213 /* Pods-SAKELog.debug.xcconfig */,
+				338D7B19D859E15317CEA4CD /* Pods-SAKELog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		109479D21DD6DCFE00B539F9 /* SAKELog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 109479E51DD6DCFF00B539F9 /* Build configuration list for PBXNativeTarget "SAKELog" */;
+			buildPhases = (
+				A7856DC22AC9E5B04508445A /* [CP] Check Pods Manifest.lock */,
+				109479CF1DD6DCFE00B539F9 /* Sources */,
+				109479D01DD6DCFE00B539F9 /* Frameworks */,
+				109479D11DD6DCFE00B539F9 /* Resources */,
+				94A34980FD23912DC3051A16 /* [CP] Embed Pods Frameworks */,
+				2CDFDC96EAAB8CB5CEEF5F1D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAKELog;
+			productName = SAKELog;
+			productReference = 109479D31DD6DCFF00B539F9 /* SAKELog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		109479CB1DD6DCFE00B539F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "金子 太祐";
+				TargetAttributes = {
+					109479D21DD6DCFE00B539F9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L23AE7QHXV;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 109479CE1DD6DCFE00B539F9 /* Build configuration list for PBXProject "SAKELog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 109479CA1DD6DCFE00B539F9;
+			productRefGroup = 109479D41DD6DCFF00B539F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				109479D21DD6DCFE00B539F9 /* SAKELog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		109479D11DD6DCFE00B539F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1637EB301DE7B5B2008F34D4 /* SettingViewController.storyboard in Resources */,
+				109479E11DD6DCFF00B539F9 /* LaunchScreen.storyboard in Resources */,
+				109479DE1DD6DCFF00B539F9 /* Assets.xcassets in Resources */,
+				1637EB5D1DE95B25008F34D4 /* SakeLogTableViewCell.xib in Resources */,
+				109479DC1DD6DCFF00B539F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CDFDC96EAAB8CB5CEEF5F1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAKELog/Pods-SAKELog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94A34980FD23912DC3051A16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAKELog/Pods-SAKELog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7856DC22AC9E5B04508445A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		109479CF1DD6DCFE00B539F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1637EB2B1DE7AD25008F34D4 /* AlertUtil.swift in Sources */,
+				100CB8681DE191ED009BCBC4 /* UserDefaultsHelper.swift in Sources */,
+				1637EB5C1DE95B25008F34D4 /* SakeLogTableViewCell.swift in Sources */,
+				1637EB2D1DE7AE8D008F34D4 /* NotificationUtil.swift in Sources */,
+				1637EB631DE98417008F34D4 /* SakeLogDetailViewController.swift in Sources */,
+				1637EB4B1DE91629008F34D4 /* FMDatabase.m in Sources */,
+				1637EB531DE91AB3008F34D4 /* DatabaseUtli.swift in Sources */,
+				109479EC1DD6F4F300B539F9 /* LabelCaptureViewController.swift in Sources */,
+				1637EB4F1DE91629008F34D4 /* FMResultSet.m in Sources */,
+				109479E91DD6F48B00B539F9 /* SakeLogViewController.swift in Sources */,
+				1637EB561DE91BFA008F34D4 /* StringExtension.swift in Sources */,
+				1637EB291DE7ACDD008F34D4 /* BeaconUtil.swift in Sources */,
+				1637EB4C1DE91629008F34D4 /* FMDatabaseAdditions.m in Sources */,
+				160FE0991DEA214100FA373F /* ProgressUtil.swift in Sources */,
+				100CB8631DE16EAC009BCBC4 /* SettingsViewController.swift in Sources */,
+				109479D71DD6DCFF00B539F9 /* AppDelegate.swift in Sources */,
+				100CB8651DE1752D009BCBC4 /* TopViewController.swift in Sources */,
+				1637EB591DE92A2D008F34D4 /* SakeLogData.swift in Sources */,
+				109479EE1DD6F53000B539F9 /* MapViewController.swift in Sources */,
+				1637EB331DE7C508008F34D4 /* StampViewController.swift in Sources */,
+				1637EB611DE982BB008F34D4 /* JsonParseUtil.swift in Sources */,
+				1637EB5F1DE97A1B008F34D4 /* S_SimabaraInfoViewController.swift in Sources */,
+				101CA7BA1DE15FD70042D157 /* PanelButton.swift in Sources */,
+				109479F01DD6F55800B539F9 /* InfoViewController.swift in Sources */,
+				1637EB3D1DE89DBC008F34D4 /* RequestUtil.swift in Sources */,
+				1637EB4D1DE91629008F34D4 /* FMDatabasePool.m in Sources */,
+				1637EB4E1DE91629008F34D4 /* FMDatabaseQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		109479DA1DD6DCFF00B539F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				109479DB1DD6DCFF00B539F9 /* Base */,
+			);
+			name = Main.storyboard;
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		109479DF1DD6DCFF00B539F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				109479E01DD6DCFF00B539F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		109479E31DD6DCFF00B539F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		109479E41DD6DCFF00B539F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		109479E61DD6DCFF00B539F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABC647DC65F5B77D172B6213 /* Pods-SAKELog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L23AE7QHXV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/KIFastQR",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SVProgressHUD",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SAKELog/AppSettings/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mst.sakelogdev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAKELog/AppSettings/SAKELog-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		109479E71DD6DCFF00B539F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 338D7B19D859E15317CEA4CD /* Pods-SAKELog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L23AE7QHXV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/KIFastQR",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SVProgressHUD",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SAKELog/AppSettings/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mst.sakelogdev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAKELog/AppSettings/SAKELog-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		109479CE1DD6DCFE00B539F9 /* Build configuration list for PBXProject "SAKELog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				109479E31DD6DCFF00B539F9 /* Debug */,
+				109479E41DD6DCFF00B539F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		109479E51DD6DCFF00B539F9 /* Build configuration list for PBXNativeTarget "SAKELog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				109479E61DD6DCFF00B539F9 /* Debug */,
+				109479E71DD6DCFF00B539F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 109479CB1DD6DCFE00B539F9 /* Project object */;
+}

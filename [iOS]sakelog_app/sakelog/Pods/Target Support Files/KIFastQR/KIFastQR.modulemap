@@ -1,0 +1,6 @@
+framework module KIFastQR {
+  umbrella header "KIFastQR-umbrella.h"
+
+  export *
+  module * { export * }
+}
